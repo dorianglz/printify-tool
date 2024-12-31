@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "http://api.dorian-gonzalez.fr/api/printify"; // Base URL de l'API backend
+const API_BASE_URL = "https://api.dorian-gonzalez.fr/api/printify"; // Base URL de l'API backend
 
 const PrintifyAPI = {
   // Récupérer les informations de la boutique

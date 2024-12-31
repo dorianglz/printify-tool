@@ -7,7 +7,7 @@ const FileUploader = () => {
 
   // Charger les listings au chargement initial
   useEffect(() => {
-    axios.get('http://api.dorian-gonzalez.fr/api/listings') // Remplacer avec ton URL d'API
+    axios.get('https://api.dorian-gonzalez.fr/api/listings') // Remplacer avec ton URL d'API
       .then((response) => setListings(response.data))
       .catch((error) => console.error('Erreur lors de la récupération des listings', error));
   }, []);
@@ -25,7 +25,7 @@ const FileUploader = () => {
     }
 
     try {
-      const response = await axios.post('http://api.dorian-gonzalez.fr/api/upload', formData, {
+      const response = await axios.post('https://api.dorian-gonzalez.fr/api/upload', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
       setListings(response.data); // Mise à jour des listings
